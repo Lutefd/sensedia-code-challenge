@@ -6,112 +6,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
     <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <title>Portal do Desenvolvedor - AME</title>
   </head>
   <body>
-  <!-- navbar -->
-  <nav class="nav" id="nav">
-    <div class="nav-center">
-      <!-- nav header -->
-      <div class="nav-header">
-<!--        <img src="./images/ame.png" alt="logo" class="nav-logo" />-->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 56" class="nav-logo"><g transform="translate(-318 -341)"><g transform="translate(318 341)"><g fill="currentColor" transform="translate(88.597 6.6)" class="LogoAme__Letters-sc-w34xbx-0 bcNjns"><path d="M719.376,433.6h-.89l-.174.011a10.3,10.3,0,0,0-6.893,3.913l-6.936,8.915a1.316,1.316,0,0,1-2.329,0l-6.927-8.915a10.3,10.3,0,0,0-6.893-3.913h-.574a7.162,7.162,0,0,0-7.178,7.156v30.858a.927.927,0,0,0,.928.927h7.115a.927.927,0,0,0,.928-.927V445.871a.7.7,0,0,1,1.255-.429l4.751,6.112a9.851,9.851,0,0,0,7.758,3.951h0a9.858,9.858,0,0,0,7.762-3.951l4.758-6.115a.7.7,0,0,1,1.255.429v25.758a.927.927,0,0,0,.928.927h7.115a.927.927,0,0,0,.928-.927V440.28A6.683,6.683,0,0,0,719.376,433.6Z" transform="translate(-641.621 -433.603)"></path><path d="M907.486,435.355a23.883,23.883,0,0,0-8.928-1.556h-2.272a23.811,23.811,0,0,0-8.9,1.555c-4.108,1.875-6.229,5.292-6.321,10.153h-.009v16.137h.019c.191,4.666,2.308,7.957,6.311,9.782,4.593,2.1,14.307,2.1,18.9,0a10.087,10.087,0,0,0,5.976-7.17l.1-.431a.926.926,0,0,0-.653-1.1l-6.624-1.846a.928.928,0,0,0-1.158.695s-.492,1.9-1.678,2.394c-2.123.875-9.052.9-11.141-.05-.322-.147-1.076-.491-1.076-2.353v-3.528h8.552a23.819,23.819,0,0,0,8.908-1.556c3.99-1.822,6.107-5.1,6.309-9.738h.02v-1.235h-.009C913.715,440.648,911.594,437.231,907.486,435.355Zm-3.344,11.265c0,1.865-.754,2.209-1.075,2.355a16.3,16.3,0,0,1-5.211.712h-8.532v-4.472c0-1.862.754-2.206,1.076-2.352a16.285,16.285,0,0,1,5.21-.712h2.224a16.384,16.384,0,0,1,5.232.711c.322.147,1.076.491,1.076,2.353Z" transform="translate(-790.412 -433.749)"></path><path d="M555.891,435.643c-4.593-2.1-14.307-2.1-18.9,0a10.085,10.085,0,0,0-5.975,7.17l-.1.431a.927.927,0,0,0,.653,1.1l6.624,1.845a.928.928,0,0,0,1.158-.695s.492-1.9,1.678-2.394c2.123-.875,9.052-.9,11.141.05.322.147,1.076.491,1.076,2.353v3.528H544.7a23.816,23.816,0,0,0-8.908,1.556c-3.989,1.822-6.107,5.1-6.309,9.738h-.02v1.235h.009c.091,4.859,2.212,8.277,6.32,10.153a23.88,23.88,0,0,0,8.929,1.556h2.272c3.61-.053,6.855-.27,8.9-1.206,4.108-1.874,6.229-5.292,6.321-10.153h.009V445.425H562.2C562.011,440.759,559.894,437.468,555.891,435.643Zm-2.642,26.563c0,1.861-.754,2.206-1.076,2.352-.869.4-2.922.325-5.21.362h-2.224a16.367,16.367,0,0,1-5.231-.712c-.322-.147-1.077-.491-1.077-2.353v-1.4c0-1.865.754-2.209,1.075-2.355a16.3,16.3,0,0,1,5.211-.712h8.532Z" transform="translate(-529.46 -433.95)"></path></g><path fill="currentColor" d="M259.753,420.268v.011l-10.444-10.358a6.747,6.747,0,0,0-9.459,0l-11.21,11.117a6.725,6.725,0,0,1-9.455,0l-11.21-11.117a6.747,6.747,0,0,0-9.459,0l-10.444,10.358v-.011a7.715,7.715,0,0,0-.352,10.565c.014.016,31.464,31.205,31.464,31.205a6.725,6.725,0,0,0,9.455,0s31.45-31.189,31.464-31.205a7.715,7.715,0,0,0-.352-10.565Z" transform="translate(-185.799 -407.98)" class="LogoAme__Diamond-sc-w34xbx-1 bfVmfQ"></path><path fill="currentColor" opacity="0.5" d="M270.134,421.02a6.73,6.73,0,0,0,9.459,0L290.8,409.9a6.683,6.683,0,0,1,4.477-1.93v-.011H254.448v.011a6.691,6.691,0,0,1,4.481,1.931Z" transform="translate(-236.75 -407.962)" class="LogoAme__Diamond-sc-w34xbx-1 LogoAme__DiamondTop-sc-w34xbx-2 bfVmfQ enoYVA"></path></g></g></svg>
-        <button class="nav-btn" id="nav-btn">
-          <i class="fas fa-bars"></i>
-        </button>
+    <!-- navbar -->
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <!--        <img src="./images/ame.png" alt="logo" class="nav-logo" />-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 212 56"
+            class="nav-logo"
+          >
+            <g transform="translate(-318 -341)">
+              <g transform="translate(318 341)">
+                <g
+                  fill="currentColor"
+                  transform="translate(88.597 6.6)"
+                  class="LogoAme__Letters-sc-w34xbx-0 bcNjns"
+                >
+                  <path
+                    d="M719.376,433.6h-.89l-.174.011a10.3,10.3,0,0,0-6.893,3.913l-6.936,8.915a1.316,1.316,0,0,1-2.329,0l-6.927-8.915a10.3,10.3,0,0,0-6.893-3.913h-.574a7.162,7.162,0,0,0-7.178,7.156v30.858a.927.927,0,0,0,.928.927h7.115a.927.927,0,0,0,.928-.927V445.871a.7.7,0,0,1,1.255-.429l4.751,6.112a9.851,9.851,0,0,0,7.758,3.951h0a9.858,9.858,0,0,0,7.762-3.951l4.758-6.115a.7.7,0,0,1,1.255.429v25.758a.927.927,0,0,0,.928.927h7.115a.927.927,0,0,0,.928-.927V440.28A6.683,6.683,0,0,0,719.376,433.6Z"
+                    transform="translate(-641.621 -433.603)"
+                  ></path>
+                  <path
+                    d="M907.486,435.355a23.883,23.883,0,0,0-8.928-1.556h-2.272a23.811,23.811,0,0,0-8.9,1.555c-4.108,1.875-6.229,5.292-6.321,10.153h-.009v16.137h.019c.191,4.666,2.308,7.957,6.311,9.782,4.593,2.1,14.307,2.1,18.9,0a10.087,10.087,0,0,0,5.976-7.17l.1-.431a.926.926,0,0,0-.653-1.1l-6.624-1.846a.928.928,0,0,0-1.158.695s-.492,1.9-1.678,2.394c-2.123.875-9.052.9-11.141-.05-.322-.147-1.076-.491-1.076-2.353v-3.528h8.552a23.819,23.819,0,0,0,8.908-1.556c3.99-1.822,6.107-5.1,6.309-9.738h.02v-1.235h-.009C913.715,440.648,911.594,437.231,907.486,435.355Zm-3.344,11.265c0,1.865-.754,2.209-1.075,2.355a16.3,16.3,0,0,1-5.211.712h-8.532v-4.472c0-1.862.754-2.206,1.076-2.352a16.285,16.285,0,0,1,5.21-.712h2.224a16.384,16.384,0,0,1,5.232.711c.322.147,1.076.491,1.076,2.353Z"
+                    transform="translate(-790.412 -433.749)"
+                  ></path>
+                  <path
+                    d="M555.891,435.643c-4.593-2.1-14.307-2.1-18.9,0a10.085,10.085,0,0,0-5.975,7.17l-.1.431a.927.927,0,0,0,.653,1.1l6.624,1.845a.928.928,0,0,0,1.158-.695s.492-1.9,1.678-2.394c2.123-.875,9.052-.9,11.141.05.322.147,1.076.491,1.076,2.353v3.528H544.7a23.816,23.816,0,0,0-8.908,1.556c-3.989,1.822-6.107,5.1-6.309,9.738h-.02v1.235h.009c.091,4.859,2.212,8.277,6.32,10.153a23.88,23.88,0,0,0,8.929,1.556h2.272c3.61-.053,6.855-.27,8.9-1.206,4.108-1.874,6.229-5.292,6.321-10.153h.009V445.425H562.2C562.011,440.759,559.894,437.468,555.891,435.643Zm-2.642,26.563c0,1.861-.754,2.206-1.076,2.352-.869.4-2.922.325-5.21.362h-2.224a16.367,16.367,0,0,1-5.231-.712c-.322-.147-1.077-.491-1.077-2.353v-1.4c0-1.865.754-2.209,1.075-2.355a16.3,16.3,0,0,1,5.211-.712h8.532Z"
+                    transform="translate(-529.46 -433.95)"
+                  ></path>
+                </g>
+                <path
+                  fill="currentColor"
+                  d="M259.753,420.268v.011l-10.444-10.358a6.747,6.747,0,0,0-9.459,0l-11.21,11.117a6.725,6.725,0,0,1-9.455,0l-11.21-11.117a6.747,6.747,0,0,0-9.459,0l-10.444,10.358v-.011a7.715,7.715,0,0,0-.352,10.565c.014.016,31.464,31.205,31.464,31.205a6.725,6.725,0,0,0,9.455,0s31.45-31.189,31.464-31.205a7.715,7.715,0,0,0-.352-10.565Z"
+                  transform="translate(-185.799 -407.98)"
+                  class="LogoAme__Diamond-sc-w34xbx-1 bfVmfQ"
+                ></path>
+                <path
+                  fill="currentColor"
+                  opacity="0.5"
+                  d="M270.134,421.02a6.73,6.73,0,0,0,9.459,0L290.8,409.9a6.683,6.683,0,0,1,4.477-1.93v-.011H254.448v.011a6.691,6.691,0,0,1,4.481,1.931Z"
+                  transform="translate(-236.75 -407.962)"
+                  class="LogoAme__Diamond-sc-w34xbx-1 LogoAme__DiamondTop-sc-w34xbx-2 bfVmfQ enoYVA"
+                ></path>
+              </g>
+            </g>
+          </svg>
+          <button class="nav-btn" id="nav-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- nav links -->
+        <ul class="nav-links">
+          <li>
+            <a href="/">API Docs</a>
+          </li>
+          <li>
+            <a href="/">Ferramentas</a>
+          </li>
+          <li>
+            <a href="/">Entrar</a>
+          </li>
+          <li>
+            <a href="/">Criar Conta</a>
+          </li>
+        </ul>
       </div>
-      <!-- nav links -->
-      <ul class="nav-links">
-        <li>
-          <a href="/">API Docs</a>
-        </li>
-        <li>
-          <a href="/">Ferramentas</a>
-        </li>
-        <li>
-          <a href="/">Entrar</a>
-        </li>
-        <li>
-          <a href="/">Criar Conta</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- end of navbar -->
-  <!-- sidebar -->
-  <aside class="sidebar" id="sidebar">
-    <div>
-      <button class="close-btn" id="close-btn">
-        <i class="fas fa-times"></i>
-      </button>
-      <!-- sidebar links -->
-      <ul class="sidebar-links">
-        <li>
-          <a href="/">API Docs</a>
-        </li>
-        <li>
-          <a href="/">Ferramentas</a>
-        </li>
-        <li>
-          <a href="/">Entrar</a>
-        </li>
-        <li>
-          <a href="/">Criar Conta</a>
-        </li>
-      </ul>
-      <!-- social icons -->
-      <ul class="social-icons">
-        <li>
-        <a href="https://www.tiktok.com/@useamedigital" class="social-icon" target="_blank">
-          <i class="fab fa-tiktok"></i>
-        </a>
-        </li>
-        <li>
-        <a href="https://pt-br.facebook.com/useamedigital/" class="social-icon" target="_blank">
-          <i class="fab fa-facebook"></i>
-        </a>
-        </li>
-        <li>
-        <a href="https://www.instagram.com/useamedigital/?hl=pt-br" class="social-icon" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </li>
-        <li>
-          <a href="https://www.youtube.com/channel/UCzEIIlOJOJLWJCTXxZQuNaw" class="social-icon" target="_blank">
-            <i class="fab fa-youtube"></i>
-          </a>
-        </li>
-        <li>
-        <a href="https://www.linkedin.com/company/ame-digital/?originalSubdomain=br" class="social-icon" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </li>
-      </ul>
-    </div>
-  </aside>
-  <!-- end of sidebar -->
-  <!-- header -->
-  <header class="hero">
-    <div class="section-center hero-center">
-      <article class="hero-info">
-        <div class="underline"></div>
-        <h1>Ame Digital</h1>
-        <h4>Explore o portal, acesse a documentação, <span>conheça as APIs</span> e desenvolva seu App</h4>
-        <a href="/" class="btn hero-btn">Primeiros passos</a>
-
-      </article>
-      <article class="hero-img">
-        <img src="/images/hero-img.png" class="hero-photo" alt="Luis Dourado">
-      </article>
-    </div>
-  </header>
-  <!-- end of header -->
+    </nav>
+    <!-- end of navbar -->
+    <!-- sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <button class="close-btn" id="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <!-- sidebar links -->
+        <ul class="sidebar-links">
+          <li>
+            <a href="/">API Docs</a>
+          </li>
+          <li>
+            <a href="/">Ferramentas</a>
+          </li>
+          <li>
+            <a href="/">Entrar</a>
+          </li>
+          <li>
+            <a href="/">Criar Conta</a>
+          </li>
+        </ul>
+        <!-- social icons -->
+        <ul class="social-icons">
+          <li>
+            <a
+              href="https://www.tiktok.com/@useamedigital"
+              class="social-icon"
+              target="_blank"
+            >
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://pt-br.facebook.com/useamedigital/"
+              class="social-icon"
+              target="_blank"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/useamedigital/?hl=pt-br"
+              class="social-icon"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCzEIIlOJOJLWJCTXxZQuNaw"
+              class="social-icon"
+              target="_blank"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/company/ame-digital/?originalSubdomain=br"
+              class="social-icon"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- end of sidebar -->
+    <!-- header -->
+    <header class="hero">
+      <div class="section-center hero-center">
+        <article class="hero-info">
+          <div class="underline"></div>
+          <h1>Ame Digital</h1>
+          <h4>
+            Explore o portal, acesse a documentação,
+            <span>conheça as APIs</span> e desenvolva seu App
+          </h4>
+          <a href="/" class="btn hero-btn">Primeiros passos</a>
+        </article>
+        <article class="hero-img">
+          <img
+            src="/images/hero-img.png"
+            class="hero-photo"
+            alt="Luis Dourado"
+          />
+        </article>
+      </div>
+    </header>
+    <!-- end of header -->
+    <!-- about -->
+    <section class="section carousel">
+      <div class="section-center carousel-center">
+        <!-- about info -->
+        <article class="carousel-info">
+          <!-- section title -->
+          <div class="section-title carousel-title">
+            <h2>Nossas <strong>soluções</strong></h2>
+            <div class="underline"></div>
+          </div>
+          <!-- end of section title -->
+        </article>
+        <div class="content-container">
+          <button class="carousel-btn prev-btn">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="slide-container"></div>
+          <!-- buttons -->
+          <!-- prev btn -->
+          <!-- next button -->
+          <button class="carousel-btn next-btn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- end of carousel -->
   </body>
-<script src="script.js"></script>
+  <script type="module" src="script.js"></script>
 </html>

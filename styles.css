@@ -536,3 +536,36 @@ Carousel
   font-size: 0.95rem;
   text-align: center;
 }
+/*
+===============
+About
+===============
+*/
+.about{
+  background-color: #EDEDED;
+}
+.about-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.about-center {
+  display: grid;
+  gap: 3rem 2rem;
+  place-items: center;
+}
+.btn-about{
+  margin-top: 2rem;
+  color: white;
+  text-align: center;
+}
+.about-info{
+  display: grid;
+}
+@media screen and (min-width: 992px) {
+  .about-center {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-info {
+    align-self: center;
+  }
+}

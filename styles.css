@@ -550,7 +550,6 @@ About
 }
 .about-center {
   display: grid;
-  gap: 3rem 2rem;
   place-items: center;
 }
 .btn-about{
@@ -558,14 +557,71 @@ About
   color: white;
   text-align: center;
 }
-.about-info{
+.about-info {
   display: grid;
 }
 @media screen and (min-width: 992px) {
   .about-center {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
   }
   .about-info {
     align-self: center;
+    width: 40%;
+  }
+}
+/*
+===============
+Skills
+===============
+*/
+
+.benefits {
+  background-color: var(--clr-white);
+}
+
+.benefit {
+  background: var(--clr-primary-5);
+  padding: 2rem 1rem;
+  width: 100%;
+  border-radius: 1rem;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.benefit-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+.benefit .underline {
+  width: 2rem;
+  border-radius: var(--radius);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  background: white;
+}
+
+.benefit:hover {
+  background: var(--clr-secondary-5);
+  color: var(--clr-white);
+}
+.benefit:hover .underline {
+  background: var(--clr-white);
+}
+@media screen and (min-width: 676px) {
+  .benefits-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 2rem;
+    -moz-column-gap: 2rem;
+    column-gap: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .benefits-center {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

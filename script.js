@@ -87,3 +87,6 @@ nextBtn.addEventListener('click', () => {
 prevBtn.addEventListener('click', () => {
   startSlider('prev');
 });
+
+// set year
+date.innerHTML = new Date().getFullYear();

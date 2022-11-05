@@ -81,6 +81,9 @@ ul {
 a {
   text-decoration: none;
 }
+a:active, a:visited{
+  color: white;
+}
 img:not(.nav-logo) {
   width: 100%;
   display: block;
@@ -623,5 +626,60 @@ Skills
 @media screen and (min-width: 992px) {
   .benefits-center {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+/*
+===============
+Footer
+===============
+*/
+.footer {
+  background: #222;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  overflow: hidden;
+}
+.footer-flex{
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-inline: 2.5rem;
+  gap: 4rem;
+}
+.footer .social-icons {
+  margin-bottom: 2rem;
+  padding-inline: 0;
+  margin-top: 0;
+  gap: 1rem;
+}
+.footer .social-icon {
+  color: var(--clr-primary-5);
+}
+.footer .social-icon:hover {
+  color: var(--clr-primary-10);
+}
+.footer-products a:hover, .footer-about a:hover, .footer-help a:hover{
+  color: var(--clr-primary-5);
+}
+.footer p {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+}
+@media screen and (min-width: 768px){
+  .footer-flex{
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+  }
+  .social-icons{
+    width: 100%;
+  }
+  .footer p{
+    margin-top: 4rem;
   }
 }

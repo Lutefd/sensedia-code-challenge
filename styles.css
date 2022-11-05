@@ -446,7 +446,7 @@ Carousel
 .slide-container {
   display: flex;
   position: relative;
-  height: 21rem;
+  height: 24rem;
   overflow: hidden;
 }
 .content-container {
